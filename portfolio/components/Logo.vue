@@ -2,6 +2,7 @@
   <div id="logo">
     <svg
       class="animated fadeInLeft shadow"
+      id="slow"
       width="200%"
       height="200%"
       viewBox="0 0 1000 440"
@@ -10,8 +11,7 @@
       xmlns:xlink="http://www.w3.org/1999/xlink"
       xml:space="preserve"
       xmlns:serif="http://www.serif.com/"
-      style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
-    >
+      style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
       <g transform="matrix(1,0,0,1,-13,36)">
         <g transform="matrix(200,0,0,200,19,197)">
           <path
@@ -92,7 +92,7 @@
         </g>
       </g>
     </svg>
-    <p class="primary animated infinite bounce delay-2s" id="Heading">Portfolio</p>
+    <p class="primary animated infinite bounce delay-2s" id="Heading">"Color is king"</p>
     <p class="primary" id="nonHeading">Full Stack Web Developer</p>
   </div>
 </template>
@@ -118,16 +118,22 @@ export default {
 </script>
 
 <style scoped>
+#slow{
+    animation-duration: 3s;
+
+}
 .shadow {
   -webkit-filter: drop-shadow( 3px 3px 2px rgba(45, 76, 94, 0.192));
   filter: drop-shadow( 3px 3px 2px rgba(45, 76, 94, 0.212));
 }
 
 #nonHeading {
+  font-family: 'Roboto 400', sans-serif;
   padding-top: 3vh;
-  font-size: 30px;
+  font-size: 25px;
 }
 #Heading {
+  font-family: 'Roboto', sans-serif;
   margin-top: 12vh;
   font-size: 63px;
 }
