@@ -1,0 +1,34 @@
+@keyframes slideInDown {
+    0% {
+      transform: translate3d(0, -100%, 0);
+      visibility: visible;
+    }
+  
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  @keyframes slideInMoreDown {
+    0% {
+      transform: translate3d(0, 0, 0);
+      visibility: visible;
+    }
+  
+    100% {
+      transform: translate3d(0, 200%, 0);
+    }
+  }
+  body, html{
+    font-family: "Roboto", sans-serif;
+  }
+  .page-enter-active{
+        animation: slideInDown 1s;
+  }
+  
+  .page-leave-active{
+    animation: slideInMoreDown 1s;
+  }
+
+  .lightBlue{
+    color: #aeb6b9;
+  }

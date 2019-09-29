@@ -1,31 +1,29 @@
 <template>
   <div id="position">
-    <section>Email : axeldevara@gmail.com</section>
-    <section>Mobile : +61 4520 76669</section>
-    <section>Instagram : @axeldevara</section>
+    <h1>Let's <h2>Create</h2>  <strong>Something Amazing!</strong> </h1>
+    <section> Email : <a href="mailto:axeldevara@gmail.com">axeldevara@gmail.com</a>  
+    Mobile : <a href="tel:+61 4520 76669">+61 4520 76669</a> 
+    LinkedIn : <a href="https://www.linkedin.com/in/axel-halintar">/in/axel-halintar</a></section>
   </div>
 </template>
 
 <style scoped>
-#atomy {
-  animation-duration: 3s;
-}
-#athalia {
-  animation-duration: 4s;
-}
-#mobile {
-  animation-duration: 2s;
-}
-.title {
+a{
   color: #aeb6b9;
+}
+h1{
+    font-family: "Roboto", sans-serif;
+  font-size:5vw;
 }
 
-.tile p {
-  color: #aeb6b9;
+strong{
+  color: #3DBEEF;
 }
+
 #position {
+  color: #aeb6b9;
   margin-left: 55vw;
-  margin-top: 25vh;
+  margin-top: 20vh;
   position: absolute;
   height: 50vh;
   width: 40vw;

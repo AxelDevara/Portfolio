@@ -111,7 +111,10 @@ export default {
           href:
             "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css"
         }
-      ]
+      ],
+      methods: {
+        
+      },
     };
   }
 };
@@ -141,6 +144,7 @@ export default {
   color: white;
 }
 #logo {
+  z-index: 3;
   position: absolute;
   margin-top: 25vh;
   margin-left: 5vw;
