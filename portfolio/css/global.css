@@ -25,6 +25,9 @@
         animation: slideInDown 1s;
   }
   
+  .is-blue{
+    color: #3DBEEF;
+  }
   .page-leave-active{
     animation: slideInMoreDown 1s;
   }
@@ -32,3 +35,4 @@
   .lightBlue{
     color: #aeb6b9;
   }
+

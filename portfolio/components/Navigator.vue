@@ -15,7 +15,7 @@
         <div class="navbar-dropdown">
           <nuxt-link to="/athalia" class="navbar-item">Athalia</nuxt-link>
           <nuxt-link to="/atomy" class="navbar-item">Atomy</nuxt-link>
-          <nuxt-link to="/mobile" class="navbar-item">Mobile Design</nuxt-link>
+          <!-- <nuxt-link to="/mobile" class="navbar-item">Mobile Design</nuxt-link> -->
         </div>
       </div>
     </div>
@@ -32,7 +32,7 @@ nav {
   position: absolute;
 }
 .link {
-  color: white;
+  color: #35444A;
 }
 #title {
   font-family: "Roboto", sans-serif;

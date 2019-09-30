@@ -1,6 +1,7 @@
 <template>
   <div id="logo">
-    <svg
+    <img src="~assets/logo.svg" alt="" class="animated fadeInLeft shadow" id="slow" width="700px">
+    <!-- <svg
       class="animated fadeInLeft shadow"
       id="slow"
       width="200%"
@@ -11,7 +12,7 @@
       xmlns:xlink="http://www.w3.org/1999/xlink"
       xml:space="preserve"
       xmlns:serif="http://www.serif.com/"
-      style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+      style="fill:#35444A;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
       <g transform="matrix(1,0,0,1,-13,36)">
         <g transform="matrix(200,0,0,200,19,197)">
           <path
@@ -91,9 +92,9 @@
           />
         </g>
       </g>
-    </svg>
-    <p class="primary animated infinite bounce delay-2s" id="Heading">"Color is king"</p>
-    <p class="primary" id="nonHeading">Full Stack Web Developer</p>
+    </svg> -->
+    <p class="primary" id="Heading"><span>Hello, I am</span></p>
+    <p class="primary" id="nonHeading"><span>Full Stack Web Developer</span></p>
   </div>
 </template>
 
@@ -123,8 +124,8 @@ export default {
 <style scoped>
 #slow{
     animation-duration: 3s;
-
 }
+
 .shadow {
   -webkit-filter: drop-shadow( 3px 3px 2px rgba(45, 76, 94, 0.192));
   filter: drop-shadow( 3px 3px 2px rgba(45, 76, 94, 0.212));
@@ -135,13 +136,29 @@ export default {
   padding-top: 3vh;
   font-size: 25px;
 }
+
 #Heading {
+  animation: slideInDown 1s;
   font-family: 'Roboto', sans-serif;
   margin-top: 12vh;
   font-size: 63px;
 }
+
+#nonHeading:hover span{
+  display: none;
+}
+#nonHeading:hover::before{
+  content: "UI/UX Designer";
+}
+
+#Heading:hover span{
+  display: none;
+}
+#Heading:hover::before{
+  content: "Welcome to my portfolio";
+}
 .primary {
-  color: white;
+  color: #35444A;
 }
 #logo {
   z-index: 3;

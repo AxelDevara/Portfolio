@@ -6,17 +6,17 @@
           <nuxt-link to="/atomy" class="title">Atomy</nuxt-link>
           <p>Desktop application project using Electron.Js as backend administration system for Indonesian company, PT.Tirta Sarana Sukses.</p>
         </div>
-        <div class="tile is-child animated slideInDown" id="mobile">
-          <nuxt-link to="/mobile">
-            <p class="title">Mobile Design</p>
+        <!-- <div class="tile is-child animated slideInDown" id="mobile">
+          <nuxt-link to="/mobile" class="title">
+            Mobile Design
           </nuxt-link>
           <p>I do mobile application design on my spare time. I like the interactivity we can develop onto mobile application. Flutter has been my go-to framework.</p>
-        </div>
+        </div> -->
       </div>
       <div class="tile is-parent">
         <div class="tile is-child animated slideInDown" id="athalia">
-          <nuxt-link to="/athalia">
-            <p class="title">Athalia</p>
+          <nuxt-link class="title" to="/athalia">
+            Athalia
           </nuxt-link>
           <p>Part of my freelancing project. I designed a fashion/digital marketing website for a friend of mine. Featuring simplicity, strong, and bold color, I challenged myself to be efficient using whitespaces and engaging "Art as Marketing" aspect into my design.</p>
         </div>
@@ -36,7 +36,7 @@
   animation-duration: 2s;
 }
 .title {
-  color: #aeb6b9;
+  color:white;
 }
 
 .tile p {

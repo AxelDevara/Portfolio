@@ -34,7 +34,6 @@ export default {
 
 <style>
 body, html{
-  background-color: #3DBEEF;
     width:100vw;
     margin: 0;
     height: 100vh;

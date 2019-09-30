@@ -14,7 +14,8 @@
     margin: 0;
 }
 .blue{
-    background-color: #3DBEEF;
+    /* background-color: #3DBEEF; */
+    background-color: white;
 }
 
 .darkblue{
