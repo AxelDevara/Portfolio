@@ -1,5 +1,6 @@
 <template>
   <div id="position">
+      <p>//About Me</p>
    <h1><span>I LOVE <strong>WEB</strong></span></h1>
     <h3 id="me"><span>I taught myself <strong>design and programming</strong> since I was 15</span></h3>
     <h2><span>Decided to study and move to <strong>Melbourne</strong></span></h2>
@@ -8,6 +9,9 @@
 </template>
 
 <style scoped>
+p{
+    font-size: 5vw;
+}
 div{
     font-family: "Roboto 300", sans-serif;
 }
@@ -43,7 +47,7 @@ h2:hover::before{
   display: none;
 }
 #me:hover::before{
-  content: "I wanted to build my own kind of facebook!"
+  content: "Gained interest in 3D then somehow started as a game developer. But then happily went back to web design."
 }
 #career:hover span{
   display: none;
@@ -52,10 +56,12 @@ h2:hover::before{
   content: "Contact me, I'd be happy to work together!"
 }
 #position {
-  color: white;
-  margin-left: 55vw;
-  margin-top: 15vh;
-  position: absolute;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+    text-align: justify;
+  color: black;
+  margin-left: 31vw;
+  margin-top: 38vh;
   height: 50vh;
   width: 40vw;
 }

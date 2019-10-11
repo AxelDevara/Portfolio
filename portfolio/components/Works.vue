@@ -1,23 +1,15 @@
 <template>
   <div id="position">
-    <div class="tile is-ancestor">
-      <div class="tile is-4 is-vertical is-parent">
-        <div class="tile is-child animated slideInDown" id="atomy">
+    <div class="columns">
+      <div class="column is-6">
+        <div class="animated slideInDown" id="atomy">
           <nuxt-link to="/atomy" class="title">Atomy</nuxt-link>
           <p>Desktop application project using Electron.Js as backend administration system for Indonesian company, PT.Tirta Sarana Sukses.</p>
         </div>
-        <!-- <div class="tile is-child animated slideInDown" id="mobile">
-          <nuxt-link to="/mobile" class="title">
-            Mobile Design
-          </nuxt-link>
-          <p>I do mobile application design on my spare time. I like the interactivity we can develop onto mobile application. Flutter has been my go-to framework.</p>
-        </div> -->
       </div>
-      <div class="tile is-parent">
-        <div class="tile is-child animated slideInDown" id="athalia">
-          <nuxt-link class="title" to="/athalia">
-            Athalia
-          </nuxt-link>
+      <div class="column is-6">
+        <div class="animated slideInDown" id="athalia">
+          <nuxt-link class="title" to="/athalia">Athalia</nuxt-link>
           <p>Part of my freelancing project. I designed a fashion/digital marketing website for a friend of mine. Featuring simplicity, strong, and bold color, I challenged myself to be efficient using whitespaces and engaging "Art as Marketing" aspect into my design.</p>
         </div>
       </div>
@@ -27,27 +19,25 @@
 
 <style scoped>
 #atomy {
+  text-align: justify;
   animation-duration: 3s;
 }
 #athalia {
+  text-align: justify;
   animation-duration: 4s;
 }
-#mobile {
-  animation-duration: 2s;
-}
+
 .title {
-  color:white;
+  color: black;
 }
 
 .tile p {
-  color: #aeb6b9;
+  color: black;
 }
 #position {
   z-index: 3;
-  margin-left: 55vw;
-  margin-top: 25vh;
-  position: absolute;
-  height: 50vh;
+  margin-left: 31%;
+  margin-top: 15vh;
   width: 40vw;
 }
 </style>

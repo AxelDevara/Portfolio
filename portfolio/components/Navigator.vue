@@ -1,23 +1,14 @@
 <template>
   <nav class="columns">
-    <div class="column" id="title">
-      <nuxt-link class="link" to="/">HOME</nuxt-link>
+    <div class="column" id="work">
+      <a href="#works">WORKS</a>
     </div>
     <div class="column" id="about">
-      <nuxt-link class="link" to="/about">ABOUT</nuxt-link>
+      <a href="#aboutme">ABOUT</a>
     </div>
+
     <div class="column" id="contact">
-      <nuxt-link class="link" to="/contact">CONTACT</nuxt-link>
-    </div>
-    <div class="column" id="work">
-      <div class="navbar-item has-dropdown is-hoverable">
-        <nuxt-link class="link" to="/">WORKS</nuxt-link>
-        <div class="navbar-dropdown">
-          <nuxt-link to="/athalia" class="navbar-item">Athalia</nuxt-link>
-          <nuxt-link to="/atomy" class="navbar-item">Atomy</nuxt-link>
-          <!-- <nuxt-link to="/mobile" class="navbar-item">Mobile Design</nuxt-link> -->
-        </div>
-      </div>
+      <a href="#Contact">CONTACT</a>
     </div>
   </nav>
 </template>
@@ -26,38 +17,37 @@
 export default {};
 </script>
 <style scoped>
+a {
+  color: black;
+}
+
 nav {
   margin-left: 4vw;
   z-index: 2;
   position: absolute;
 }
-.link {
-  color: #35444A;
-}
-#title {
-  font-family: "Roboto", sans-serif;
-  margin-top: 30px;
-  font-size: 2.5rem;
-}
 
 #about {
   font-family: "Roboto", sans-serif;
-  margin-top: 45px;
+  margin-top: 5vh;
   margin-left: 5vw;
-  font-size: 1.25rem;
+  font-weight: 100;
+  font-size: 1.5vw;
 }
 
 #contact {
   font-family: "Roboto", sans-serif;
-  margin-top: 45px;
+  margin-top: 5vh;
   margin-left: 5vw;
-  font-size: 1.25rem;
+  font-weight: 100;
+  font-size: 1.5vw;
 }
 
 #work {
   font-family: "Roboto", sans-serif;
-  margin-top: 45px;
-  font-size: 1.25rem;
+  margin-top: 5vh;
+  font-weight: 100;
+  font-size: 1.5vw;
   margin-left: 5vw;
 }
 </style>

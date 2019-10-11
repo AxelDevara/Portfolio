@@ -51,16 +51,20 @@ p {
 p img {
   display: inline;
 }
+img:hover{
+  -ms-transform: scale(2); /* IE 9 */
+  -webkit-transform: scale(2); /* Safari 3-8 */
+  transform: scale(2);
+}
 div {
-  color: #aeb6b9;
+  color:black;
 }
 #first p {
   text-align: justify;
 }
 #atomy {
-  margin-left: 55vw;
-  margin-top: 20vh;
-  position: absolute;
+  margin-left: 30vw;
+  margin-top: 5vh;
   height: 50vh;
   width: 40vw;
 }

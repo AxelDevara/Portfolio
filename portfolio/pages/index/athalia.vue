@@ -5,7 +5,7 @@
         <img src="~assets/atha.png" width="500px" height="300px" alt />
       </div>
       <div class="column" id="text">
-        <p class="lightBlue"><span >Strong and bold monotone color </span></p>
+        <p class="text"><span >Strong and bold monotone color </span></p>
         <p>Designed to immerse viewer with intimate theme color</p>
      
         
@@ -27,12 +27,12 @@ h1{
   padding-top: 13%;
 }
 div{
-  color: #aeb6b9;
+  color: black;
 }
-.lightBlue:hover span{
+.text:hover span{
   display: none;
 }
-.lightBlue:hover::before{
+.text:hover::before{
   content: "Dividing details between contents and focal point with 3 tones red, black, and white";
 }
 p {
@@ -41,9 +41,8 @@ p {
   display: inline-block;
 }
 #position {
-  margin-left: 55vw;
-  margin-top: 20vh;
-  position: absolute;
+  margin-left: 30vw;
+  margin-top: 5vh;
   height: 50vh;
   width: 40vw;
 }

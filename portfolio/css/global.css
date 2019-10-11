@@ -1,38 +1,55 @@
-@keyframes slideInDown {
-    0% {
-      transform: translate3d(0, -100%, 0);
-      visibility: visible;
-    }
-  
-    100% {
-      transform: translate3d(0, 0, 0);
-    }
-  }
-  @keyframes slideInMoreDown {
-    0% {
-      transform: translate3d(0, 0, 0);
-      visibility: visible;
-    }
-  
-    100% {
-      transform: translate3d(0, 200%, 0);
-    }
-  }
-  body, html{
-    font-family: "Roboto", sans-serif;
-  }
-  .page-enter-active{
-        animation: slideInDown 1s;
-  }
-  
-  .is-blue{
-    color: #3DBEEF;
-  }
-  .page-leave-active{
-    animation: slideInMoreDown 1s;
+@keyframes slideInL {
+  0% {
+    transform: translate3d(-200%, 0, 0);
+    visibility: visible;
   }
 
-  .lightBlue{
-    color: #aeb6b9;
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slideInMoreDown {
+  0% {
+    transform: translate3d(0, 0, 0);
   }
 
+  100% {
+    visibility: hidden;
+    transform: translate3d(200%, 0, 0);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body,
+html {
+  font-family: "Roboto", sans-serif;
+}
+.page-enter-active {
+  animation: slideInL 1s;
+}
+.link {
+  color: black;
+}
+.is-blue {
+  color: #3dbeef;
+}
+.page-leave-active {
+  animation: slideInMoreDown 1s;
+}
+
+img {
+  transition: transform 0.2s;
+}
+img:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
+}
+.lightBlue {
+  color: #aeb6b9;
+}
+a:hover{
+  letter-spacing: 0.5vw;
+}
